@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    apply plugin: 'maven'
+    //apply plugin: 'maven'
 }
 
 group 'org.example'
