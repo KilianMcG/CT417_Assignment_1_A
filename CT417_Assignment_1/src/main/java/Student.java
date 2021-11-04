@@ -21,7 +21,7 @@ public class Student {
         courses = new ArrayList<Course>();
         modules = new ArrayList<Module>();
 
-        //getUsername();
+        getUsername();
     }
 
     public void getUsername() {
@@ -58,6 +58,9 @@ public class Student {
 
     public void addCourse(Course newCourse) {
         courses.add(newCourse);
+        for(Module m : newCourse.getModule()){
+            m.addStudent((this));
+        }
     }
 
     public void addModule(Module newModule) {

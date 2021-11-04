@@ -32,6 +32,7 @@ public class Module {
 
     public void addStudent(Student newStudent) {
         students.add(newStudent);
+        newStudent.addModule(this);
     }
 
     public ArrayList<Student> getStudents(){

@@ -52,6 +52,7 @@ public class Course {
 
     public void addModule(Module newMod) {
         modules.add(newMod);
+        newMod.addCourse(this);
     }
 
     public ArrayList<Module> getModule() {
