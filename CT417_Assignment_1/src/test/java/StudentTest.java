@@ -8,7 +8,7 @@ public class StudentTest {
     public void testAgeAndUsername() {
         Student s1 = new Student("Tom", 123456, LocalDate.parse("2000-03-14"));
         assertEquals(21, s1.getAge());
-        s1.getUsername();
+        //s1.getUsername();
         assertEquals("Tom21", s1.getUName());
     }
 
